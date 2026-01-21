@@ -7,7 +7,7 @@ export default function Document() {
         <title>Nikhila Manogna Renduchintala</title>
         <meta
           name="description"
-          content="Nikhila Manogna Renduchintala – Software Engineer specializing in Backend Development, Data Analytics, and Machine Learning."
+          content="Nikhila Manogna Renduchintala – Software Engineer, Data Analytst"
         />
       </Head>
       <body>
