@@ -4,12 +4,13 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
+        <title>Nikhila Manogna Renduchintala</title>
+        <meta
+          name="description"
+          content="Nikhila Manogna Renduchintala – Software Engineer specializing in Backend Development, Data Analytics, and Machine Learning."
         />
       </Head>
-      <body className="font-inter">
+      <body>
         <Main />
         <NextScript />
       </body>
