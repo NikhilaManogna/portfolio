@@ -60,7 +60,6 @@ export default function Navbar() {
           <a href="#projects" onClick={() => setOpen(false)}>Projects</a>
           <a href="#skills" onClick={() => setOpen(false)}>Skills</a>
           <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
-          <ThemeToggle />
         </div>
       )}
     </nav>
