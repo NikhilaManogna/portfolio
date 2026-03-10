@@ -10,6 +10,13 @@ export default function Projects() {
       github: "https://github.com/NikhilaManogna/Distributed-Url-Shortener",
     },
     {
+      title: "Incident Monitoring & Failure Prediction System",
+      description:
+        "A distributed monitoring platform designed to process real-time system metrics and detect potential failures before they impact services. The system streams operational data through Kafka, performs anomaly detection and risk scoring, and exposes secure APIs for monitoring and root-cause insights to improve incident response and reliability.",
+      tech: ["Java", "Spring Boot", "Apache Kafka", "PostgreSQL"],
+      github: "https://github.com/NikhilaManogna/Incident-monitoring-system",
+    },
+    {
       title: "Fall Detection via Multimodal Video Classification",
       description:
         "A deep learning–based video analysis system that detects human falls by learning both spatial and temporal patterns from video data. Multiple pretrained models were fine-tuned and evaluated to compare performance, and the final solution was integrated into a web interface for easy video uploads and predictions.",
@@ -19,9 +26,16 @@ export default function Projects() {
     {
       title: "Customer Segmentation System",
       description:
-        "A machine learning application that groups customers into meaningful segments based on behavioral and demographic attributes. The system helps businesses understand customer patterns and make data-driven marketing decisions by exposing predictions through a simple web interface.",
+        "An application that groups customers into meaningful segments based on behavioral and demographic attributes. The system helps businesses understand customer patterns and make data-driven marketing decisions by exposing predictions through a simple web interface.",
       tech: ["Python", "Flask", "Scikit-learn"],
       github: "https://github.com/NikhilaManogna/CustomerSegementation",
+    },
+    {
+      title: "Insurance Premium Analytics",
+      description:
+        "An analytics system built to analyze insurance policyholder data and uncover key drivers of premium pricing and claim risk. The project applies statistical analysis and visual exploration to identify relationships between demographic attributes, health indicators, and insurance costs, enabling data-driven insights for risk assessment and pricing strategies.",
+      tech: ["Python", "Power BI", "DAX", "Data Analysis"],
+      github: "https://github.com/NikhilaManogna/Insurance-Premium-Analytics",
     },
     {
       title: "Enterprise Sales & Delivery Analytics",
@@ -35,7 +49,7 @@ export default function Projects() {
       description:
          "A cloud-hosted system designed to manage blood donor information and donation requests efficiently. By deploying the application on AWS infrastructure, the platform ensures better availability and smoother coordination between donors and organizers.",
       tech: ["AWS EC2", "HTML", "CSS"],
-      github: "",
+      github: "https://github.com/NikhilaManogna",
     },
     {
       title: "Online Car Rental System",
