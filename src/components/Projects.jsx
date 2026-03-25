@@ -10,6 +10,13 @@ export default function Projects() {
       github: "https://github.com/NikhilaManogna/Distributed-Url-Shortener",
     },
     {
+      title: "E-Commerce Platform",
+      description:
+        "Built a distributed e-commerce platform using microservices architecture to manage catalog, authentication, orders, and payments. Implemented event-driven communication using Kafka to decouple services and ensure reliable order processing, enabling scalable handling of concurrent user transactions with improved system resilience and fault isolation.",
+      tech: ["Java", "Spring Boot", "Microservices", "Kafka", "PostgreSQL", "Docker"],
+      github: "https://github.com/NikhilaManogna/ecommerce-platform",
+    },
+    {
       title: "Incident Monitoring & Failure Prediction System",
       description:
         "A distributed monitoring platform designed to process real-time system metrics and detect potential failures before they impact services. The system streams operational data through Kafka, performs anomaly detection and risk scoring, and exposes secure APIs for monitoring and root-cause insights to improve incident response and reliability.",
