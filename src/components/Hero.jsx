@@ -12,16 +12,12 @@ export default function Hero() {
 
         {/* Role */}
         <p className="mt-4 text-lg font-medium text-gray-600 dark:text-gray-300">
-          Software Engineer | Data Analytics & Machine Learning Enthusiast
+          Backend Engineer | Distributed Systems | Microservices | Data Engineering & Analytics
         </p>
 
         {/* Summary */}
         <p className="mt-6 text-base leading-relaxed text-gray-600 dark:text-gray-400 sm:text-lg">
-          Software Engineer with a strong foundation in backend development, data
-        analytics, and machine learning. Experienced in building scalable
-        systems, designing REST APIs, and working with data-driven models for
-        real-world problem solving. Focused on clean architecture, performance,
-        and practical application of ML and analytics concepts.
+          Building scalable backend systems and data-driven platforms with a focus on performance, reliability, and real-time processing. Experienced in microservices architecture, event-driven systems, and developing analytics and machine learning solutions to solve real-world problems.
         </p>
 
         <div className="flex justify-center gap-6 mt-6">

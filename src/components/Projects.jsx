@@ -4,64 +4,91 @@ export default function Projects() {
   const projects = [
     {
       title: "Distributed URL Shortener System",
-      description:
-        "A backend-focused system that converts long URLs into short, shareable links while handling high traffic efficiently. The application is designed with scalability in mind, using caching and rate limiting to ensure fast redirections, prevent abuse, and support analytics such as click tracking and usage patterns.",
+      short: "High-performance backend system for generating and resolving short URLs with low latency.",
+      impact: [
+        "Handled 50K+ URLs with optimized storage and retrieval",
+        "Achieved sub-10ms latency using Redis caching",
+      ],
       tech: ["Java", "Spring Boot", "Redis", "PostgreSQL", "Docker"],
       github: "https://github.com/NikhilaManogna/Distributed-Url-Shortener",
     },
     {
       title: "E-Commerce Platform",
-      description:
-        "Built a distributed e-commerce platform using microservices architecture to manage catalog, authentication, orders, and payments. Implemented event-driven communication using Kafka to decouple services and ensure reliable order processing, enabling scalable handling of concurrent user transactions with improved system resilience and fault isolation.",
+      short: "Distributed microservices-based platform for managing catalog, orders, and payments.",
+      impact: [
+        "Designed scalable microservices architecture with fault isolation",
+        "Implemented Kafka-based event-driven workflows for reliable order processing",
+      ],
       tech: ["Java", "Spring Boot", "Microservices", "Kafka", "PostgreSQL", "Docker"],
       github: "https://github.com/NikhilaManogna/ecommerce-platform",
     },
     {
       title: "Incident Monitoring & Failure Prediction System",
-      description:
-        "A distributed monitoring platform designed to process real-time system metrics and detect potential failures before they impact services. The system streams operational data through Kafka, performs anomaly detection and risk scoring, and exposes secure APIs for monitoring and root-cause insights to improve incident response and reliability.",
+      short: "Real-time monitoring system for detecting anomalies and predicting failures.",
+      impact: [
+        "Processed 1K+ system metrics/min using Kafka streams",
+        "Implemented anomaly detection and secure APIs for system insights",
+      ],
       tech: ["Java", "Spring Boot", "Apache Kafka", "PostgreSQL"],
       github: "https://github.com/NikhilaManogna/Incident-monitoring-system",
     },
     {
       title: "Fall Detection via Multimodal Video Classification",
-      description:
-        "A deep learning–based video analysis system that detects human falls by learning both spatial and temporal patterns from video data. Multiple pretrained models were fine-tuned and evaluated to compare performance, and the final solution was integrated into a web interface for easy video uploads and predictions.",
+      short: "Deep learning system for detecting human fall events from video data.",
+      impact: [
+        "Achieved 93.5% accuracy using transformer-based models",
+        "Built web interface for real-time video upload and prediction",
+      ],
       tech: ["Python", "Deep Learning", "Flask"],
       github: "https://github.com/NikhilaManogna/Human-Fall-detection",
     },
     {
       title: "Customer Segmentation System",
-      description:
-        "An application that groups customers into meaningful segments based on behavioral and demographic attributes. The system helps businesses understand customer patterns and make data-driven marketing decisions by exposing predictions through a simple web interface.",
+      short: "Machine learning system for grouping customers based on behavior and attributes.",
+      impact: [
+        "Applied clustering techniques to identify meaningful customer segments",
+        "Enabled data-driven decision-making through prediction interface",
+      ],
       tech: ["Python", "Flask", "Scikit-learn"],
       github: "https://github.com/NikhilaManogna/CustomerSegementation",
     },
     {
       title: "Insurance Premium Analytics",
-      description:
-        "An analytics system built to analyze insurance policyholder data and uncover key drivers of premium pricing and claim risk. The project applies statistical analysis and visual exploration to identify relationships between demographic attributes, health indicators, and insurance costs, enabling data-driven insights for risk assessment and pricing strategies.",
+      short: "Data analytics project for understanding insurance pricing patterns.",
+      impact: [
+        "Performed exploratory analysis to identify premium distribution trends",
+        "Built visual insights using Power BI and Python",
+      ],
       tech: ["Python", "Power BI", "DAX", "Data Analysis"],
       github: "https://github.com/NikhilaManogna/Insurance-Premium-Analytics",
     },
     {
       title: "Enterprise Sales & Delivery Analytics",
-      description:
-        "An interactive analytics dashboard built to visualize sales performance, delivery timelines, and profit trends across regions. The dashboard enables stakeholders to explore data dynamically and gain insights without relying on manual reports or spreadsheets.",
+      short: "Interactive dashboard for analyzing sales, profit, and delivery performance.",
+      impact: [
+        "Built dynamic Power BI dashboards with drill-down capabilities",
+        "Identified revenue drivers and operational bottlenecks",
+      ],
       tech: ["Power BI", "DAX", "Data Analytics"],
       github: "https://github.com/NikhilaManogna/Enterprise-Sales-Operations",
     },
     {
       title: "Blood Bank Management System (AWS)",
-      description:
-         "A cloud-hosted system designed to manage blood donor information and donation requests efficiently. By deploying the application on AWS infrastructure, the platform ensures better availability and smoother coordination between donors and organizers.",
+      short: "Cloud-based system for managing blood donors and donation requests.",
+      impact: [
+        "Deployed application on AWS EC2 for improved availability",
+        "Streamlined donor and request management workflow",
+      ],
       tech: ["AWS EC2", "HTML", "CSS"],
       github: "https://github.com/NikhilaManogna",
     },
     {
       title: "Online Car Rental System",
-      description:
-        "A web-based application that allows users to browse available cars, make bookings, and manage rentals digitally. The system focuses on simplifying the rental workflow and improving accessibility for both customers and service providers.",
+      short: "Web application for managing car rentals and bookings.",
+      impact: [
+        "Developed end-to-end booking workflow for users",
+        "Improved accessibility for managing rentals digitally",
+      ],
       tech: ["HTML", "CSS", "XAMPP"],
       github: "https://github.com/NikhilaManogna/Car-Rental-System",
     },
@@ -75,15 +102,16 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="border border-zinc-700 rounded-xl p-6 hover:shadow-lg transition"
+            className="border border-zinc-700 rounded-xl p-6 hover:shadow-xl hover:scale-[1.02] transition duration-300"
           >
             {/* Title + GitHub */}
             <div className="flex items-start justify-between mb-2">
-              <h3 className="text-lg font-semibold mb-4">{project.title}</h3>
+              <h3 className="text-lg font-semibold">{project.title}</h3>
               {project.github && (
                 <a
                   href={project.github}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 hover:text-white"
                 >
                   <Github size={20} />
@@ -91,17 +119,24 @@ export default function Projects() {
               )}
             </div>
 
-            {/* Description */}
-            <p className="text-gray-600 text-sm mb-3">
-              {project.description}
+            {/* Short Description */}
+            <p className="text-gray-400 text-sm mb-2">
+              {project.short}
             </p>
+
+            {/* Impact Points */}
+            <ul className="text-gray-500 text-sm space-y-1 mb-3">
+              {project.impact.map((point, i) => (
+                <li key={i}>• {point}</li>
+              ))}
+            </ul>
 
             {/* Tech stack */}
             <div className="flex flex-wrap gap-2 mt-4">
               {project.tech.map((tech, i) => (
                 <span
                   key={i}
-                  className="text-sm bg-zinc-800 text-zinc-200 px-3 py-1 rounded-full"
+                  className="text-xs bg-zinc-800 text-zinc-200 px-3 py-1 rounded-full"
                 >
                   {tech}
                 </span>
