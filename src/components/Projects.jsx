@@ -13,6 +13,16 @@ export default function Projects() {
       github: "https://github.com/NikhilaManogna/Distributed-Url-Shortener",
     },
     {
+      title: "Real-Time Collaborative Document Editor",
+      short: "Google Docs–like platform enabling multiple users to edit documents simultaneously.",
+      impact: [
+        "Implemented real-time collaboration using WebSockets for multi-user editing",
+        "Handled concurrent updates with conflict resolution and live synchronization",
+      ],
+      tech: ["React", "Java", "Spring Boot", "Redis"],
+      github: "https://github.com/NikhilaManogna/Docs-collab-platform",
+    },
+    {
       title: "E-Commerce Platform",
       short: "Distributed microservices-based platform for managing catalog, orders, and payments.",
       impact: [
